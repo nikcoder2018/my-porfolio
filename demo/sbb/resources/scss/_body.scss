@@ -1,0 +1,98 @@
+#announcements {
+  max-height: 600px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.row-striped {
+  padding: 15px 0;
+
+  &:nth-of-type(odd) {
+    background-color: #efefef;
+    border-left: 4px #000000 solid;
+  }
+
+  &:nth-of-type(even) {
+    background-color: #ffffff;
+    border-left: 4px #efefef solid;
+  }
+}
+
+.btn-group .btn-fab {
+  position: fixed !important;
+  right: 20px;
+}
+
+#main {
+  bottom: 20px;
+}
+
+#mission,
+#vision {
+  width: 500px;
+  height: 300px;
+  background-color: $yellow;
+}
+
+#mission {
+  position: absolute;
+  left: 180px;
+  top: 50px;
+}
+
+#vision {
+  position: absolute;
+  top: 250px;
+  left: 580px;
+}
+
+.bg-purple {
+  background-color: #6f42c1;
+}
+
+.bg-green {
+  background-color: #28a745;
+}
+
+.student > .navbar {
+  min-height: 50px !important;
+
+  .navbar-nav > li > a {
+    color: white !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+}
+
+.student-avatar {
+  padding: 0 0 10px 0;
+  background: #fff;
+
+  .avatar_outer_container {
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .avatar_inner_container {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 5px;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
+
+    button {
+      position: relative;
+      bottom: 30px;
+      left: 60px;
+    }
+  }
+  .avatar_inner_container img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+  }
+}

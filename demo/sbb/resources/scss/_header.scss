@@ -1,0 +1,18 @@
+
+.header{
+  background-color: $header-bg-color;
+  min-height: 100px;
+}
+
+.title{
+  text-align: center;
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.8rem;
+  }
+  small{
+    color: maroon;
+  }
+}
