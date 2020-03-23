@@ -1,0 +1,185 @@
+// img{
+//     &.bg-obj-1{
+//         width: 100px;
+//         position: fixed;
+//         right: 5em;
+//         top: 31em;
+//         @media #{$xs-layout, $sm-layout}{
+//             margin-top: 10em;
+//         }
+//     }
+//     &.bg-obj-2{
+//         width: 300px;
+//         position: fixed;
+//         top: 22em;
+//         right: 5em;
+//     }
+//     &.bg-obj-3{
+//         width: 100px;
+//         position: fixed;
+//         top: 23.5em;
+//         right: 24.5em;
+//     }
+//     &.bg-obj-4{
+//         width: 120px;
+//         position: fixed;
+//         right: 18em;
+//         top: 16em;
+//     }
+//     &.bg-obj-5{
+//         width: 100px;
+//         position: fixed;
+//         right: 6em;
+//         top: 16em;
+//     }
+//     &.bg-obj-6{
+//         width: 230px;
+//         position: fixed;
+//         right: 9.5em;
+//         top: 8em;
+//     }
+//     &.bg-obj-7{
+//         width: 80px;
+//         position: fixed;
+//         right: 6em;
+//         top: 4em;
+//     }
+// }
+
+.bg-obj{
+    &-1{
+        width: 100px;
+        position: absolute;
+        right: 8em;
+        top: 28em;
+        @media #{$xs-layout}{
+            width: 80px;
+            right: 2em;
+            top: 20em;
+          }
+        @media #{$xs-layout,$sm-layout}{
+            right: 2em;
+          }
+    }
+    &-2{
+        width: 300px;
+        position: absolute;
+        top: 19em;
+        right: 6em;
+        @media #{$xs-layout}{
+            width: 230px;
+            right: .5em !important;
+            top: 13.5em;
+            p{
+                font-size: 12px;
+                padding: 5px !important;
+                padding-top: 10px !important;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+          }
+        @media #{$sm-layout}{
+            right: 3em;
+          }
+        img{
+            width: 100%;
+        }
+
+        p{
+            position: absolute;
+            top: 0;
+            padding: 10px;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+    &-3{
+        width: 100px;
+        position: absolute;
+        top: 21.5em;
+        right: 25.5em;
+        @media #{$xs-layout}{
+            width: 60px;
+            top: 15em !important;
+            right:15.5em !important;
+          }
+        @media #{$sm-layout}{
+            right: 22.5em;
+          }
+    }
+    &-4{
+        width: 120px;
+        position: absolute;
+        right: 20em;
+        top: 13em;
+        @media #{$xs-layout}{
+            width: 100px;
+            right:11.5em !important;
+            top: 9em;
+          }
+        @media #{$sm-layout}{
+            right: 17em;
+        }
+    }
+    &-5{
+        width: 100px;
+        position: absolute;
+        right: 6em;
+        top: 12em;
+        @media #{$xs-layout}{
+            width: 80px;
+            right: 1em;
+            top: 9em;
+        }
+    }
+    &-6{
+        width: 250px;
+        position: absolute;
+        right: 9.5em;
+        top: 4em;
+        @media #{$xs-layout}{
+            width: 200px;
+            top: 2em;
+            right: 3em !important;
+            p{
+                font-size: 12px;
+                i{
+                    font-size: 10px !important;
+                }
+            }
+        }
+        @media #{$sm-layout}{
+            right: 6.5em;
+          }
+        img{
+            width: 100%;
+        }
+
+        p{
+            position: absolute;
+            top: 0;
+            padding: 5px;
+            padding-top: 10px;
+            text-align: center;
+            font-weight: bold;
+            i{
+                font-size: 14px;
+            }
+        }
+    }
+    &-7{
+        width: 80px;
+        @media #{$xs-layout}{
+            width: 50px;
+            right: 1em;
+        }
+        position: absolute;
+        right: 6em;
+        // @media #{$sm-layout}{
+        //     right: 3em;
+        //   }
+    }
+}

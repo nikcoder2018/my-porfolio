@@ -1,0 +1,33 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    
+  }
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    background: $white;
+    @media #{$xx-layout,$sp-layout}{
+      background-image: url(../images/bg.png);
+    }
+    @media #{$xlg-layout, $lg-layout}{
+      background-image: url(../images/bg-laptop.png);
+    }
+    @media #{$md-layout}{
+      background-image: url(../images/bg-tablet.png);
+    }
+    @media #{$xs-layout}{
+      background: $blue;
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+
+    font-family: "Fellix-Regular";
+    
+    
+}

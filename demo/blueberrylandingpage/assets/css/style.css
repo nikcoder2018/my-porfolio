@@ -1,0 +1,460 @@
+@font-face {
+  font-family: 'Fellix-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Fellix-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Fellix-SemiBold';
+  src: url(../fonts/Fellix-SemiBold.woff2) format("woff2");
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #FFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFF;
+  font-family: "Fellix-Regular";
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1919px), only screen and (min-width: 1920px) {
+  body {
+    background-image: url(../images/bg.png);
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  body {
+    background-image: url(../images/bg-laptop.png);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-image: url(../images/bg-tablet.png);
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  body {
+    background: #0089ff;
+  }
+}
+
+.bg-obj-1 {
+  width: 100px;
+  position: absolute;
+  right: 8em;
+  top: 28em;
+}
+
+@media only screen and (max-width: 575px) {
+  .bg-obj-1 {
+    width: 80px;
+    right: 2em;
+    top: 20em;
+  }
+}
+
+@media only screen and (max-width: 575px), only screen and (max-width: 767px) {
+  .bg-obj-1 {
+    right: 2em;
+  }
+}
+
+.bg-obj-2 {
+  width: 300px;
+  position: absolute;
+  top: 19em;
+  right: 6em;
+}
+
+@media only screen and (max-width: 575px) {
+  .bg-obj-2 {
+    width: 230px;
+    right: .5em !important;
+    top: 13.5em;
+  }
+  .bg-obj-2 p {
+    font-size: 12px;
+    padding: 5px !important;
+    padding-top: 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bg-obj-2 {
+    right: 3em;
+  }
+}
+
+.bg-obj-2 img {
+  width: 100%;
+}
+
+.bg-obj-2 p {
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bg-obj-3 {
+  width: 100px;
+  position: absolute;
+  top: 21.5em;
+  right: 25.5em;
+}
+
+@media only screen and (max-width: 575px) {
+  .bg-obj-3 {
+    width: 60px;
+    top: 15em !important;
+    right: 15.5em !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bg-obj-3 {
+    right: 22.5em;
+  }
+}
+
+.bg-obj-4 {
+  width: 120px;
+  position: absolute;
+  right: 20em;
+  top: 13em;
+}
+
+@media only screen and (max-width: 575px) {
+  .bg-obj-4 {
+    width: 100px;
+    right: 11.5em !important;
+    top: 9em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bg-obj-4 {
+    right: 17em;
+  }
+}
+
+.bg-obj-5 {
+  width: 100px;
+  position: absolute;
+  right: 6em;
+  top: 12em;
+}
+
+@media only screen and (max-width: 575px) {
+  .bg-obj-5 {
+    width: 80px;
+    right: 1em;
+    top: 9em;
+  }
+}
+
+.bg-obj-6 {
+  width: 250px;
+  position: absolute;
+  right: 9.5em;
+  top: 4em;
+}
+
+@media only screen and (max-width: 575px) {
+  .bg-obj-6 {
+    width: 200px;
+    top: 2em;
+    right: 3em !important;
+  }
+  .bg-obj-6 p {
+    font-size: 12px;
+  }
+  .bg-obj-6 p i {
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bg-obj-6 {
+    right: 6.5em;
+  }
+}
+
+.bg-obj-6 img {
+  width: 100%;
+}
+
+.bg-obj-6 p {
+  position: absolute;
+  top: 0;
+  padding: 5px;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bg-obj-6 p i {
+  font-size: 14px;
+}
+
+.bg-obj-7 {
+  width: 80px;
+  position: absolute;
+  right: 6em;
+}
+
+@media only screen and (max-width: 575px) {
+  .bg-obj-7 {
+    width: 50px;
+    right: 1em;
+  }
+}
+
+header {
+  margin-top: 2em;
+  margin-left: 3em;
+}
+
+@media only screen and (max-width: 575px) {
+  header {
+    margin-left: 0 !important;
+  }
+}
+
+.container-fluid {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media only screen and (max-width: 575px) {
+  section {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  section {
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+}
+
+section .title {
+  text-align: center;
+  margin-top: 3em;
+}
+
+@media only screen and (max-width: 575px) {
+  section .title {
+    margin-top: 1.5em !important;
+  }
+}
+
+section .title span {
+  display: block;
+  line-height: 1.1em;
+}
+
+section .title span:first-child {
+  font-size: 3.5em;
+}
+
+@media only screen and (max-width: 575px) {
+  section .title span:first-child {
+    font-size: 2em;
+  }
+}
+
+section .title span:nth-child(2) {
+  font-size: 4em;
+}
+
+@media only screen and (max-width: 575px) {
+  section .title span:nth-child(2) {
+    font-size: 2.5em;
+  }
+}
+
+section .title span:nth-child(2) strong {
+  font-family: "Fellix-SemiBold";
+}
+
+section .title span:last-child {
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 575px) {
+  section .title span:last-child {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  section .title span:last-child {
+    font-size: 20px;
+  }
+}
+
+section .title span:last-child b {
+  font-size: 1.5em;
+}
+
+section .services {
+  margin-top: 3em;
+  padding-left: 7em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  section .services {
+    margin-top: 2em !important;
+    padding-left: 3em;
+  }
+  section .services ul {
+    padding-left: 2em;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  section .services {
+    margin-top: 2em !important;
+    padding-left: 1em;
+  }
+  section .services ul {
+    padding-left: 2em;
+  }
+}
+
+section .services ul {
+  padding-left: 1em;
+}
+
+section .services p {
+  font-weight: bold;
+  line-height: 20px;
+  margin: 0;
+}
+
+section .actions {
+  width: 70%;
+  margin-top: 4em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 575px), only screen and (max-width: 767px) {
+  section .actions {
+    margin-top: 1em;
+    margin-bottom: 3em;
+    width: 100% !important;
+  }
+  section .actions h5 {
+    color: #FFF !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  section .actions {
+    width: 100% !important;
+    margin-top: .5em;
+    margin-bottom: 5em;
+  }
+  section .actions .btn > p {
+    color: #FFF;
+  }
+}
+
+section .actions h5 {
+  font-family: "Fellix-SemiBold";
+  margin: 1em;
+  color: #0089ff;
+}
+
+.page-wrapper {
+  width: 100%;
+}
+
+.btn {
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: .3em;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #FFF;
+  padding: .8em 1.5em;
+  margin: 0 .5em;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.5, 0, 0.5, 1), -webkit-box-shadow 0.2s;
+  transition: -webkit-transform 0.1s cubic-bezier(0.5, 0, 0.5, 1), -webkit-box-shadow 0.2s;
+  transition: transform 0.1s cubic-bezier(0.5, 0, 0.5, 1), box-shadow 0.2s;
+  transition: transform 0.1s cubic-bezier(0.5, 0, 0.5, 1), box-shadow 0.2s, -webkit-transform 0.1s cubic-bezier(0.5, 0, 0.5, 1), -webkit-box-shadow 0.2s;
+}
+
+@media only screen and (max-width: 575px), only screen and (max-width: 767px) {
+  .btn {
+    margin-bottom: 2em;
+  }
+}
+
+.btn.btn-blue {
+  background: #0685f5f6;
+}
+
+.btn.btn-blue:hover {
+  background: #0175daf6;
+}
+
+.btn.btn-orange {
+  background: #ff7600;
+}
+
+.btn.btn-orange:hover {
+  background: #e96d01;
+}
+
+.btn p {
+  position: absolute;
+  font-weight: normal;
+  -webkit-transform: translateY(15px) translateX(10px);
+          transform: translateY(15px) translateX(10px);
+  color: #0089ff;
+}
+
+@media only screen and (max-width: 575px) {
+  .btn p {
+    color: #FFF;
+  }
+}
+
+.btn:hover {
+  color: #FFF;
+}
+/*# sourceMappingURL=style.css.map */
