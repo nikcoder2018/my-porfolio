@@ -6,18 +6,42 @@
 @import "layouts";
 @import "obj";
 
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: "Fellix-Regular";
+    color: $white;
+}
 
-
-header{
-    margin-top: 2em;
-    margin-left: 3em;
-    @media #{$xs-layout}{
-        margin-left: 0 !important;
+.logo{
+    margin-top: 2%;
+    @media #{$md-layout,$lg-layout}{
+        margin-top: 3%;
     }
 }
 .container-fluid{
-    padding-left: 1em;
-    padding-right: 1em;    
+    max-width: 1599px;
+    padding-left:5%; 
+    padding-right:5%;  
+}
+section{
+    background: #0089ff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    @media #{$md-layout,$lg-layout,$xlg-layout,$xx-layout,$sp-layout}{
+        height: 100vh;
+    }
+}
+
+#bg-curve{
+    position: fixed;
+    bottom: 0;
+
+    path{
+        fill: #fff;
+    }
 }
 
 section{
@@ -33,23 +57,32 @@ section{
 
     .title{
         text-align: center;
-        margin-top: 3em;
+        margin-top: 3.5em;
+        @media only screen and (min-width: 1600px){
+            margin-top: 10% !important;
+        }
         @media #{$xs-layout}{
             margin-top: 1.5em !important;
         }
         span{
             display: block;
-            line-height: 1.1em;
+            line-height: 1em;
             &:first-child{
-                font-size: 3.5em;
+                font-size: 3em;
                 @media #{$xs-layout}{
                     font-size: 2em;
                 }
+                @media only screen and (min-width: 1600px){
+                    font-size: 3.5em;
+                }
             }
             &:nth-child(2){
-                font-size: 4em;
+                font-size: 3.5em;
                 @media #{$xs-layout}{
                     font-size: 2.5em;
+                }
+                @media only screen and (min-width: 1600px){
+                    font-size: 4em;
                 }
                 strong{
                     font-family: "Fellix-SemiBold";
@@ -63,8 +96,12 @@ section{
                 @media #{$lg-layout}{
                     font-size: 20px;
                 }
+                @media only screen and (min-width: 1600px){
+                    font-size: 2.5em;
+                }
                 b{
-                    font-size: 1.5em;
+                    font-size: 1.2em;
+                    font-weight: normal;
                 }
             }
         }
@@ -85,8 +122,14 @@ section{
                 padding-left: 2em;
             }
         }
+
+        @media only screen and (min-width: 1600px){
+            margin-top: 4em;
+            font-size: 18px;
+        }
         margin-top: 3em;
-        padding-left: 7em;
+        padding-left: 2em;
+        text-align: left;
         ul{
             padding-left: 1em;
         }
